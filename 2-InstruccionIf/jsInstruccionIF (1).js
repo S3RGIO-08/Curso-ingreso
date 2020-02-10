@@ -13,9 +13,5 @@ function mostrar()
         alert("ESTAS RE VIEJARDO BROOOOOU")
     }
 
-alert("Buenas Noches")
-
-
-
 
 }//FIN DE LA FUNCIÓN
