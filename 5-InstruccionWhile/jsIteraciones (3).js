@@ -1,13 +1,15 @@
-function mostrar()
-{
+function mostrar() {
 
-var clave = prompt("ingrese el número clave.");
-var password = "utn750";
-while ( calve != password){
-
-}
+    var clave = prompt("Ingrese la contraseña");
 
 
+    while (clave != "utn750") {
+
+        clave = prompt("Clave incorrecta. Reintente ")
+
+    }
+
+    alert("Clave correcta !!")
 
 
 }//FIN DE LA FUNCIÓN
