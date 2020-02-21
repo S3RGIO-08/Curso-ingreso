@@ -13,14 +13,41 @@ var contadorIntentos;
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
-	 
+  
+  var maximo = 100;
+  var minimo = 1;
+  var numeroSecreto = Math.floor (Math.random() * ((maximo + 1) - minimo ) + minimo);
 		//alert(numeroSecreto );
-	
-
+alert(numeroSecreto)
 }
 
 function verificar()
 {
-	
+
+  var contador=0;
+
+  var numero = parseInt(document.getElementById("numero").value);
+
+if (numero > numeroSecreto){
+
+  alert("Te pasaste...")
+ contador++;
+}
+else (numero == numeroSecreto)
+  alert("Felicidades...")
+
+}
+
+
+
+
+document.getElementById("intentos").value = contador
+
+
+
+
+
+
+
 	
 }

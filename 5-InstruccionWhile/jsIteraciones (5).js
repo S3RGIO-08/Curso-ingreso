@@ -1,7 +1,7 @@
 function mostrar()
 {
 
-var sexo = prompt("ingrese f ó m .").toLocaleLowerCase();
+var sexo = prompt("ingrese f ó m .").toLowerCase();
 
 //Tambien puede ser while (!(sexo == f || sexo m))
 while ( sexo != "f" && sexo != "m"){

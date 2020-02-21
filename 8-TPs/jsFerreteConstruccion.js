@@ -15,7 +15,7 @@ function Rectangulo() {
 function Circulo() {
 
     var radio = parseInt(document.getElementById("Radio").value);
-    var alambre = (radio * 2) * 3.14;
+    var alambre = (radio * 2) * 3.14 * 3;
 
     alert("Los metros de alambre a comprar son : " + alambre);
 
