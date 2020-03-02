@@ -6,13 +6,14 @@ function mostrar() {
     var contadorImpares = 0;
     var contadorCeros = 0;
     var contadorPositivos = 0;
-    var promedio;
+    var promedio = 0;
     var acumuladorNeg = 0;
     var acumuladorPos = 0;
     var numeroBajo;
     var numeroAlto;
     var letraBaja;
     var letraAlta;
+    var flag = 0;
 
     do {
      
@@ -21,7 +22,7 @@ function mostrar() {
             numero = parseInt(prompt("Eso no es un numero. Ingrese un numero del -100 al 100"));
         }
         letra = prompt("Ingrese una letra");
-        while (!isNaN(letra)) {
+        while (!((letra >="A" && letra <= "Z") || (letra >="a" && letra <="z"))) {
             letra = prompt("Letra invalida. Ingrese una letra");
         }
         //----------Pare e Impar----------------
@@ -53,18 +54,18 @@ function mostrar() {
             flag = 1;
         }
 
-        seguir = prompt ("Si quiere continuar ingrese: si");
+            seguir = prompt("Si quiere continuar ingrese: si");
 
-    } while (seguir == "s" );
+    } while (seguir == "s" || seguir == "si");
 
-    if (contadorPos != 0) {
+    if (contadorPositivos != 0) {
         promedio = acumuladorPos / contadorPositivos;
     }
 
     document.write("Cantidad de numeros Pares : " + contadorPares + "</br>Cantidad de numeros Impares : " + contadorImpares
-        + "</br>Cantidad de Ceros : " + contadorCeros + "</br>Promedio de los Positivos : " + promedio
-        + "</br>Suma de los negativos : " + acumuladorNeg + "</br>Numero mas alto : " + numeroAlto + " Y la letra : "
-        + letraAlta + "</br>Numero mas bajo : " + numeroBajo + " Y la letra : " + letraBaja);
+    + "</br>Cantidad de Ceros : " + contadorCeros + "</br>Promedio de los Positivos : " + promedio
+    + "</br>Suma de los negativos : " + acumuladorNeg + "</br>Numero mas alto : " + numeroAlto + "</br>Y la letra : "
+    + letraAlta + "</br>Numero mas bajo : " + numeroBajo + "</br>Y la letra : " + letraBaja);
 
 }
 //Realizar el algoritmo que permita iterar el ingreso de dos datos, una letra y un número entre -100 y 100 (validar)
